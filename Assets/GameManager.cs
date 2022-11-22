@@ -3,6 +3,7 @@ using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
 using TMPro;
+using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -55,7 +56,7 @@ public class GameManager : MonoBehaviour
         }
 
         WordSelectIndex = new List<int>();
-
+        QuesImage.enabled = false;
     }
 
     private void Start()
@@ -63,7 +64,6 @@ public class GameManager : MonoBehaviour
         WordSelectIndex = new List<int>();
         QuestionSet();
         timeLeft = maxTime;
-
     }
 
     private void Update()
@@ -72,7 +72,7 @@ public class GameManager : MonoBehaviour
         enemy.UpdateHealth();
         if (timeLeft > 0)
         {
-         try
+            try
             {
                 Image timerImage = GameObject.Find("TimerBar").GetComponent<Image>();
                 timeLeft -= Time.deltaTime;
@@ -221,19 +221,36 @@ public class GameManager : MonoBehaviour
 
     public void hintAnswer()
     {
-
+        // event hint answer pada button
         if (AnswerPrefabs[currentAnswerIndex].CharValue.Equals('_'))
         {
             AnswerPrefabs[currentAnswerIndex].SetChar(char.ToUpper(answerWords[currentAnswerIndex]));
+            if (currentAnswerIndex == answerWords.Length - 1)
+            {
+                QuesImage.enabled = true;
+                QuesImage.sprite = questionDataScriptable.questions[currentQuestionIndex].imageQues;
+            }
             currentAnswerIndex++;
         }
 
+        // cek health player jika health player kurang dari 0 maka game over
         player.health = player.health - player.attackDamage;
         if (player.health <= 0)
         {
             player.health = 0;
+            if (player.health <= 0)
+                {
+                    gameOverLose.SetActive(true);
+                    player.health = 0;
+                    enemy.AnimateAttack();
+                    if (!couritine)
+                        StartCoroutine(attackTimeOutScenes());
+                    timerImage.SetActive(false);
+                }
             gameOverLose.SetActive(true);
         }
+
+        // cek jika jawaban sudah benar
         if (currentAnswerIndex == answerWords.Length)
         {
             isAnswer = true;
@@ -272,6 +289,7 @@ public class GameManager : MonoBehaviour
                 {
                     gameOverLose.SetActive(true);
                     player.health = 0;
+                    enemy.AnimateAttack();
                     if (!couritine)
                         StartCoroutine(attackTimeOutScenes());
                     timerImage.SetActive(false);
