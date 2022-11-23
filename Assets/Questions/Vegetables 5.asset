@@ -10,15 +10,16 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 3077c6d12374ed04c8a04388c16c08ff, type: 3}
-  m_Name: Animal
+  m_Name: Vegetables 5
   m_EditorClassIdentifier: 
   questions:
-  - imageQues: {fileID: 21300000, guid: 36f597f106d1bd84497d0ba71932bed9, type: 3}
-    indonesiaKata: Babi
-    answerInggris: Pig
-  - imageQues: {fileID: 21300000, guid: 8840c7f15a8d39949a05c49781eef1d6, type: 3}
-    indonesiaKata: Kucing
-    answerInggris: Cat
-  - imageQues: {fileID: 0}
-    indonesiaKata: Kucing
-    answerInggris: Cat
+  - indonesiaKata: Timun Jepang
+    answerInggris: Zucchini
+  - indonesiaKata: Kunyit
+    answerInggris: Turmeric
+  - indonesiaKata: Kemangi
+    answerInggris: Basil
+  - indonesiaKata: Mint
+    answerInggris: Mint
+  - indonesiaKata: Bawang Perai
+    answerInggris: Leek

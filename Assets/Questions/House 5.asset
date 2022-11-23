@@ -10,9 +10,16 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 3077c6d12374ed04c8a04388c16c08ff, type: 3}
-  m_Name: Animals
+  m_Name: House 5
   m_EditorClassIdentifier: 
   questions:
-  - imageQues: {fileID: 0}
-    indonesiaKata: 
-    answerInggris: 
+  - indonesiaKata: Handuk
+    answerInggris: Towel
+  - indonesiaKata: Kloset
+    answerInggris: Toilet
+  - indonesiaKata: Wastafel
+    answerInggris: Sink
+  - indonesiaKata: Tangga
+    answerInggris: Stair
+  - indonesiaKata: Garasi
+    answerInggris: Garage
