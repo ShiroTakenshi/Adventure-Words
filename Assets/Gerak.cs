@@ -1,6 +1,9 @@
 using System.Collections;
 using System.Collections.Generic;
+using Mono.CompilerServices.SymbolWriter;
+using Unity.VisualScripting;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
 public class Gerak : MonoBehaviour
@@ -23,6 +26,9 @@ public class Gerak : MonoBehaviour
     Text info_Coin; // Variabel untuk Koin
     
     Animator anim; 
+    private void Awake() {
+        
+    }
     void Start()
     {
         play=transform.position; //start sebagai object transform posisi
@@ -104,8 +110,9 @@ public class Gerak : MonoBehaviour
         {
             gameObject.SetActive(false);
             lose.SetActive(true);
-            Debug.Log("Player Mokad");
+            Debug.Log("Player Wafat");
         }
+        
 
     }
 
@@ -115,5 +122,22 @@ public class Gerak : MonoBehaviour
         Vector3 Player = transform.localScale;
         Player.x *= -1;
         transform.localScale = Player;
+    }
+
+    private void OnTriggerStay2D(Collider2D other) {
+        if(other.gameObject.tag == "Monster"){
+            Debug.Log("Player Wafat");
+            if(Input.GetKeyDown(KeyCode.F)){
+                StartCoroutine(loadMiniGames());
+                Destroy(other.gameObject);
+            }
+        }
+    }
+
+    IEnumerator loadMiniGames()
+    {
+        Debug.Log("Loading Mini Games");
+        SceneManager.LoadScene("MyWord", LoadSceneMode.Additive);
+        yield return new WaitUntil(() => SceneManager.GetSceneByName("MyWord").isLoaded);
     }
 }

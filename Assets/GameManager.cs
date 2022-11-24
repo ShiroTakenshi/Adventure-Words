@@ -5,6 +5,7 @@ using System.Linq;
 using TMPro;
 using Unity.VisualScripting;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
 [System.Serializable]
@@ -326,6 +327,16 @@ public class GameManager : MonoBehaviour
         couritine = true;
         yield return null;
         enemy.AnimateAttack();
+    }
+
+    public void RestartGame()
+    {
+        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+    }
+
+    public void BackToGameplay()
+    {
+        SceneManager.LoadScene("Platformer 2");
     }
 
 }
