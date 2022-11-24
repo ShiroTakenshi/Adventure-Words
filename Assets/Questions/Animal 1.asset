@@ -1,0 +1,30 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3077c6d12374ed04c8a04388c16c08ff, type: 3}
+  m_Name: Animal 1
+  m_EditorClassIdentifier: 
+  questions:
+  - imageQues: {fileID: 21300000, guid: b51a04b2ed91a5c458dddf38ee041647, type: 3}
+    indonesiaKata: Babi
+    answerInggris: Pig
+  - imageQues: {fileID: 0}
+    indonesiaKata: Kucing
+    answerInggris: Cat
+  - imageQues: {fileID: 0}
+    indonesiaKata: Anjing
+    answerInggris: Dog
+  - imageQues: {fileID: 0}
+    indonesiaKata: Sapi
+    answerInggris: Cow
+  - imageQues: {fileID: 0}
+    indonesiaKata: Ikan
+    answerInggris: Fish
