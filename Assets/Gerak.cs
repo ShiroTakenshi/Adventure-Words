@@ -19,7 +19,7 @@ public class Gerak : MonoBehaviour
     public GameObject lose;
     Vector2 play; //variabel vector untuk posisi start
     public bool play_again;
-    Text info_heart; // Variabel Heart
+    [SerializeField] private Text info_heart; // Variabel Heart
     Text info_Coin; // Variabel untuk Koin
     
     Animator anim; 
@@ -28,7 +28,6 @@ public class Gerak : MonoBehaviour
         play=transform.position; //start sebagai object transform posisi
         lompat = GetComponent<Rigidbody2D>();
         anim = GetComponent<Animator>();
-        info_heart = GameObject.Find("UI_Heart").GetComponent<Text>(); // Pendefinisian UI Heart sebagai componen Text
         // info_Coin = GameObject.Find("UI_Coin").GetComponent<Text>();
     }
 
