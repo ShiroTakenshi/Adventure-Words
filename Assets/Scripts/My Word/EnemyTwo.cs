@@ -46,8 +46,8 @@ public class EnemyTwo : MonoBehaviour
         transform.localScale = new Vector2(transform.localScale.x * -1, transform.localScale.y);
     }
 
-    private void OnCollisionEnter2D(Collision2D other)
-    {
-        Destroy(other.gameObject);
-    }
+    // private void OnCollisionEnter2D(Collision2D other)
+    // {
+    //     Destroy(other.gameObject);
+    // }
 }
