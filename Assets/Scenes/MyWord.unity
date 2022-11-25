@@ -202,6 +202,7 @@ GameObject:
   - component: {fileID: 38745640}
   - component: {fileID: 38745639}
   - component: {fileID: 38745638}
+  - component: {fileID: 38745641}
   m_Layer: 5
   m_Name: Player
   m_TagString: Untagged
@@ -264,9 +265,28 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -272.75497, y: -44.210007}
-  m_SizeDelta: {x: 168.49, y: 228.419}
+  m_AnchoredPosition: {x: -267.95294, y: -44.210007}
+  m_SizeDelta: {x: 156.4849, y: 228.419}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &38745641
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 38745637}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6dde65267f9e24a419be9bc76078fd35, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  healthText: {fileID: 2079797335}
+  health: 100
+  maxHealth: 100
+  attackDamage: 25
+  restoreHealth: 10
+  attackPoint: {fileID: 639783508}
+  Enemy: {fileID: 639783507}
 --- !u!1 &151414711
 GameObject:
   m_ObjectHideFlags: 0
@@ -284,7 +304,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &151414712
 RectTransform:
   m_ObjectHideFlags: 0
@@ -372,7 +392,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 20d511efc702a4e43a968b5bf7328527, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  questionDataScriptable: {fileID: 11400000, guid: 100e234b043f6dc408eeb8d73a1d6166, type: 2}
+  questionDataScriptable: {fileID: 11400000, guid: c79c277573e6b9e44bda828a545b6c84, type: 2}
   questionText: {fileID: 1330825346}
   QuesImage: {fileID: 554002695}
   AnswerPrefabs:
@@ -398,10 +418,10 @@ MonoBehaviour:
   - {fileID: 2007280426}
   gameOverWins: {fileID: 1480063394}
   gameOverLose: {fileID: 1877853882}
-  player: {fileID: 0}
+  player: {fileID: 38745641}
   enemy: {fileID: 838670834}
   timerImage: {fileID: 1866070210}
-  maxTime: 8
+  maxTime: 35
 --- !u!4 &298558199
 Transform:
   m_ObjectHideFlags: 0
@@ -1278,7 +1298,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 0}
+  m_Sprite: {fileID: 21300000, guid: ff43052f06bbab946b2cc85959dd27ea, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -1307,7 +1327,6 @@ GameObject:
   - component: {fileID: 639783508}
   - component: {fileID: 639783511}
   - component: {fileID: 639783510}
-  - component: {fileID: 639783509}
   m_Layer: 5
   m_Name: Enemy
   m_TagString: Untagged
@@ -1335,25 +1354,6 @@ RectTransform:
   m_AnchoredPosition: {x: 273.00003, y: -44.000008}
   m_SizeDelta: {x: 168.49, y: 228.419}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &639783509
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 639783507}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6dde65267f9e24a419be9bc76078fd35, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  healthText: {fileID: 1709876584}
-  health: 75
-  maxHealth: 100
-  attackDamage: 5
-  restoreHealth: 10
-  attackPoint: {fileID: 38745640}
-  Enemy: {fileID: 38745637}
 --- !u!114 &639783510
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1767,7 +1767,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   healthText: {fileID: 1709876584}
-  health: 75
+  health: 100
   maxHealth: 100
   attackDamage: 5
   restoreHealth: 10
@@ -2806,8 +2806,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -272.755, y: -44.21}
-  m_SizeDelta: {x: 168.49, y: 228.419}
+  m_AnchoredPosition: {x: -278.1573, y: -44.21}
+  m_SizeDelta: {x: 157.6854, y: 228.419}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1001 &1222778874
 PrefabInstance:
@@ -3960,7 +3960,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 0.8156863, b: 0, a: 1}
+  m_Color: {r: 1, g: 0.92958665, b: 0, a: 0.7176471}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -4952,7 +4952,7 @@ MonoBehaviour:
   m_PreserveAspect: 0
   m_FillCenter: 1
   m_FillMethod: 0
-  m_FillAmount: 0.702
+  m_FillAmount: 1
   m_FillClockwise: 1
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
@@ -5222,7 +5222,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 460, y: 170}
+  m_AnchoredPosition: {x: 459.4, y: 247}
   m_SizeDelta: {x: 53.78, y: 53.78}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &2004631310
