@@ -1,0 +1,30 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3077c6d12374ed04c8a04388c16c08ff, type: 3}
+  m_Name: School 3
+  m_EditorClassIdentifier: 
+  questions:
+  - imageQues: {fileID: 21300000, guid: a848f508e80db954e9b7c55e6fc2655e, type: 3}
+    indonesiaKata: Tas
+    answerInggris: Bag
+  - imageQues: {fileID: 21300000, guid: 19bc6e34d4caf2c42bec8c9bbee4e6a7, type: 3}
+    indonesiaKata: Penggaris
+    answerInggris: Ruler
+  - imageQues: {fileID: 21300000, guid: 3256ae5d21c1ea94e9975dd33e9960de, type: 3}
+    indonesiaKata: Papan
+    answerInggris: Board
+  - imageQues: {fileID: 21300000, guid: fce22ba458fb8de4c875c49acfe3ebfa, type: 3}
+    indonesiaKata: Klip
+    answerInggris: Clip
+  - imageQues: {fileID: 21300000, guid: bbd77fce03a2ab04aad22069c5c83e21, type: 3}
+    indonesiaKata: Pulpen
+    answerInggris: Pen
