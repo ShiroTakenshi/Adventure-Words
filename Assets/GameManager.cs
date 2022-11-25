@@ -336,7 +336,7 @@ public class GameManager : MonoBehaviour
 
     public void BackToGameplay()
     {
-        SceneManager.LoadScene("Platformer 2");
+        SceneManager.UnloadSceneAsync("MyWord");
     }
 
 }
