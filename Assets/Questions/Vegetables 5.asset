@@ -10,16 +10,16 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 3077c6d12374ed04c8a04388c16c08ff, type: 3}
-  m_Name: Vegetables
+  m_Name: Vegetables 5
   m_EditorClassIdentifier: 
   questions:
-  - indonesiaKata: Jagung
-    answerInggris: Corn
-  - indonesiaKata: Kentang
-    answerInggris: Potato
-  - indonesiaKata: Tahu
-    answerInggris: Tofu
-  - indonesiaKata: Wortel
-    answerInggris: Carrot
-  - indonesiaKata: Cabai
-    answerInggris: Chili
+  - indonesiaKata: Timun Jepang
+    answerInggris: Zucchini
+  - indonesiaKata: Kunyit
+    answerInggris: Turmeric
+  - indonesiaKata: Kemangi
+    answerInggris: Basil
+  - indonesiaKata: Mint
+    answerInggris: Mint
+  - indonesiaKata: Bawang Perai
+    answerInggris: Leek
