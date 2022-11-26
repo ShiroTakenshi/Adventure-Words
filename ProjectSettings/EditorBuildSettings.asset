@@ -6,9 +6,15 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/Scenes/MyWord.unity
-    guid: 88e11e1ad4941ac40a008a1995787455
-  - enabled: 1
     path: Assets/Scenes/Platformer 2.unity
     guid: 2cda990e2423bbf4892e6590ba056729
+  - enabled: 1
+    path: Assets/Scenes/AnimalWord1.unity
+    guid: 88e11e1ad4941ac40a008a1995787455
+  - enabled: 1
+    path: Assets/Scenes/AnimalWord2.unity
+    guid: ce2105cd750a00a4a99a21053e1e95c4
+  - enabled: 1
+    path: Assets/Scenes/AnimalWord3.unity
+    guid: a48a87518bfdbfc44a3ceb1f8941d572
   m_configObjects: {}

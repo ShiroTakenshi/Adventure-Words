@@ -527,7 +527,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 20d511efc702a4e43a968b5bf7328527, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  questionDataScriptable: {fileID: 11400000, guid: 100e234b043f6dc408eeb8d73a1d6166, type: 2}
+  questionDataScriptable: {fileID: 11400000, guid: e55d70bf4557c754a94ad037fba21a35, type: 2}
   questionText: {fileID: 1330825346}
   QuesImage: {fileID: 554002695}
   AnswerPrefabs:
@@ -557,6 +557,7 @@ MonoBehaviour:
   enemy: {fileID: 838670834}
   timerImage: {fileID: 1866070210}
   maxTime: 20
+  Scene: AnimalWord2
 --- !u!4 &298558199
 Transform:
   m_ObjectHideFlags: 0

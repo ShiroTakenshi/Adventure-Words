@@ -38,6 +38,7 @@ public class GameManager : MonoBehaviour
     private string answerWords;
     private float timeLeft;
     private bool couritine = false;
+    [SerializeField] private string Scene;
 
     public enum GameState
     {
@@ -331,12 +332,13 @@ public class GameManager : MonoBehaviour
 
     public void RestartGame()
     {
-        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+        SceneManager.UnloadSceneAsync(Scene);
+        SceneManager.LoadScene(Scene, LoadSceneMode.Additive);
     }
 
     public void BackToGameplay()
     {
-        SceneManager.UnloadSceneAsync("MyWord");
+        SceneManager.UnloadSceneAsync(Scene);
     }
 
 }
