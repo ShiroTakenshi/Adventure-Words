@@ -450,6 +450,9 @@ MonoBehaviour:
   lose: {fileID: 444772886}
   play_again: 0
   info_heart: {fileID: 1007465428746098322}
+  ButtonLeft: 0
+  ButtonRight: 0
+  ButtonJump: 0
 --- !u!61 &374191067
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -557,7 +560,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 10
   m_Sprite: {fileID: 21300000, guid: 2606dbc64bad94e4d9f6e20ae080918b, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -577,7 +580,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 374191065}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -8.58, y: -2.05, z: -2}
+  m_LocalPosition: {x: -8.58, y: -2.238, z: 0}
   m_LocalScale: {x: 0.7, y: 0.7, z: 0.7}
   m_ConstrainProportionsScale: 0
   m_Children:

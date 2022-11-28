@@ -15,7 +15,7 @@ public class Player : MonoBehaviour
 
     [SerializeField] private TMP_Text healthText; 
     public int health = 75;
-    public int maxHealth = 100;
+    // public int maxHealth = 100;
     [SerializeField] public int attackDamage = 25;
     public int restoreHealth = 10;
     public Transform attackPoint;
@@ -51,9 +51,9 @@ public class Player : MonoBehaviour
     }
     
     public void UpdateHealth(){
-        healthText.text = "Health: " + health + "/" + maxHealth;
-        if(health >= 100){
-            health = 100;
+        healthText.text = "" + health;
+        if(health >= 10){
+            health = 10;
         }
     }
 }

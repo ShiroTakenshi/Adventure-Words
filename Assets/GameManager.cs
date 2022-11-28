@@ -163,7 +163,7 @@ public class GameManager : MonoBehaviour
             {
                 player.health += player.restoreHealth;
                 Debug.Log("Jawaban Benar");
-                enemy.health -= 25;
+                enemy.TakeDamage();
                 gameState = GameState.Next;
                 timeLeft += 2;
                 currentQuestionIndex++;
@@ -236,19 +236,25 @@ public class GameManager : MonoBehaviour
         }
 
         // cek health player jika health player kurang dari 0 maka game over
-        player.health = player.health - player.attackDamage;
+        player.health = player.health - enemy.attackDamage;
         if (player.health <= 0)
         {
             player.health = 0;
-            if (player.health <= 0)
-                {
-                    gameOverLose.SetActive(true);
+            // if (player.health <= 0)
+            //     {
+            //         gameOverLose.SetActive(true);
+            //         player.health = 0;
+            //         enemy.AnimateAttack();
+            //         if (!couritine)
+            //             StartCoroutine(attackTimeOutScenes());
+            //         timerImage.SetActive(false);
+            //     }
+                gameOverLose.SetActive(true);
                     player.health = 0;
                     enemy.AnimateAttack();
                     if (!couritine)
                         StartCoroutine(attackTimeOutScenes());
                     timerImage.SetActive(false);
-                }
             gameOverLose.SetActive(true);
         }
 

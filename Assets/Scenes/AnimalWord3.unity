@@ -454,10 +454,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   healthText: {fileID: 2079797335}
-  health: 100
-  maxHealth: 100
-  attackDamage: 25
-  restoreHealth: 10
+  health: 10
+  attackDamage: 2
+  restoreHealth: 1
   attackPoint: {fileID: 43256954}
   Enemy: {fileID: 43256953}
 --- !u!114 &77425623
@@ -1774,7 +1773,7 @@ GameObject:
   - component: {fileID: 838670835}
   - component: {fileID: 838670834}
   m_Layer: 5
-  m_Name: Enemy (1)
+  m_Name: Enemy
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1813,10 +1812,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   healthText: {fileID: 1709876584}
-  health: 75
-  maxHealth: 100
-  attackDamage: 5
-  restoreHealth: 10
+  health: 10
+  attackDamage: 2
+  restoreHealth: 1
   attackPoint: {fileID: 1211976333}
   Enemy: {fileID: 1211976330}
 --- !u!114 &838670835
@@ -4106,7 +4104,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1709876583
 RectTransform:
   m_ObjectHideFlags: 0
