@@ -21,7 +21,7 @@ public class Gerak : MonoBehaviour
     public Transform deteksitanah;
     public float jangkauan;
     public int heart;
-    public int coin;
+    // public int coin;
     public GameObject lose;
     Vector2 play; //variabel vector untuk posisi start
     public bool play_again;
@@ -33,6 +33,8 @@ public class Gerak : MonoBehaviour
     private void Awake() {
         
     }
+
+
     void Start()
     {
         play=transform.position; //start sebagai object transform posisi
@@ -193,6 +195,13 @@ public class Gerak : MonoBehaviour
             }
         }
         
+    }
+
+    private void OnTriggerEnter2D(Collider2D other) {
+        if(other.gameObject.tag == "Checkpoint"){
+            play = other.transform.position;
+            Debug.Log("Checkpoint");
+        }
     }
 
     IEnumerator loadMiniGames(string Name)

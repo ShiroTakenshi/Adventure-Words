@@ -10,6 +10,7 @@ TagManager:
   - Monster3
   - Monster4
   - Monster5
+  - Checkpoint
   layers:
   - Default
   - TransparentFX

@@ -21,7 +21,6 @@ public class Enemies : MonoBehaviour
         {
             KomponenGerak.heart--;
             KomponenGerak.play_again=true;
-            print ("Checkpoint");
         }
     }
 }
