@@ -568,7 +568,7 @@ GameObject:
   - component: {fileID: 1210848528}
   - component: {fileID: 1210848527}
   - component: {fileID: 1210848526}
-  - component: {fileID: 1210848525}
+  - component: {fileID: 1210848529}
   - component: {fileID: 1210848524}
   m_Layer: 0
   m_Name: Capsule
@@ -598,19 +598,6 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
---- !u!114 &1210848525
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1210848523}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a4f33f75d7ab2aa46bc1fe550df26b83, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  runSpeed: 10
 --- !u!61 &1210848526
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -704,6 +691,19 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1210848529
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1210848523}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0975f18cf9c129b47a1611f7d881806f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  runSpeed: 10
 --- !u!1 &1509562885
 GameObject:
   m_ObjectHideFlags: 0
@@ -883,7 +883,7 @@ GameObject:
   - component: {fileID: 2090216245}
   - component: {fileID: 2090216244}
   - component: {fileID: 2090216243}
-  - component: {fileID: 2090216242}
+  - component: {fileID: 2090216246}
   m_Layer: 0
   m_Name: Apple
   m_TagString: Untagged
@@ -891,19 +891,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &2090216242
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2090216241}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 05bd6c3971811284891ac24ef6b9a234, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Pesan: {fileID: 787102890}
 --- !u!61 &2090216243
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -998,3 +985,16 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 3.945}
+--- !u!114 &2090216246
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2090216241}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b2f1b59fcb4664f4b84d453f4ae88a78, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Pesan: {fileID: 787102890}

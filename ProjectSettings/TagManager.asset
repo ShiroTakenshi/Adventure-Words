@@ -5,6 +5,13 @@ TagManager:
   serializedVersion: 2
   tags:
   - Floor
+  - Monster
+  - Monster2
+  - Monster3
+  - Monster4
+  - Monster5
+  - Checkpoint
+  - Enemy
   - Obstacle
   layers:
   - Default
@@ -13,10 +20,10 @@ TagManager:
   - 
   - Water
   - UI
-  - Floor
+  - Ground
   - 
-  - 
-  - 
+  - Karakter
+  - Enemy
   - 
   - 
   - 
@@ -40,6 +47,12 @@ TagManager:
   - 
   - 
   m_SortingLayers:
+  - name: Background
+    uniqueID: 2633018931
+    locked: 0
   - name: Default
     uniqueID: 0
+    locked: 0
+  - name: Ground
+    uniqueID: 2221512375
     locked: 0

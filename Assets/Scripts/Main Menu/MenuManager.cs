@@ -11,10 +11,8 @@ public class MenuManager : MonoBehaviour
     public Slider musicSlider;
 
     // TODO berganti scene
-    public void LoadScene(int sceneIndex)
-    {
-        SceneManager.LoadScene(sceneIndex);
-        Debug.Log("Ini adalah Scene ke-" + sceneIndex);
+    public void PlayScene(){
+        SceneManager.LoadScene("Platformer 2");
     }
 
     private void Awake()

@@ -6,15 +6,18 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
+    path: Assets/Scenes/New Platformer/Level1.unity
+    guid: 5a4ada5bffbc5b844ac9cb12ec02a7bc
+  - enabled: 1
     path: Assets/Scenes/Main Menu.unity
     guid: 8a1340bd1b02c494c9fd8a364b5b4bb3
   - enabled: 1
-    path: Assets/Scenes/MyWord.unity
-    guid: 88e11e1ad4941ac40a008a1995787455
-  - enabled: 1
-    path: Assets/Scenes/SampleScene.unity
+    path: Assets/Scenes/Platformer 1.unity
     guid: 2cda990e2423bbf4892e6590ba056729
   - enabled: 1
-    path: Assets/Scenes/Scene Testing/Testing Scene.unity
-    guid: e88b9158952e47940ab253a92a695714
+    path: Assets/Scenes/Platformer 2.unity
+    guid: 32c9cce73ecf73e47913b44aae6564d2
+  - enabled: 1
+    path: Assets/Scenes/AnimalWord1.unity
+    guid: 88e11e1ad4941ac40a008a1995787455
   m_configObjects: {}
