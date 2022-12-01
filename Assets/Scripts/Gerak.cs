@@ -26,16 +26,22 @@ public class Gerak : MonoBehaviour
     [SerializeField] private GameObject objectivePlayers;
     [SerializeField] private Text objectiveText;
     private int go, totalPoints, objectivePoints;
-    
-    Animator anim; 
-    private void Awake() {
-        
+    [SerializeField] private string Level1;
+    [SerializeField] private string Level2;
+    [SerializeField] private string Level3;
+    [SerializeField] private string Level4;
+    [SerializeField] private string Level5;
+
+    Animator anim;
+    private void Awake()
+    {
+
     }
 
 
     void Start()
     {
-        play=transform.position; //start sebagai object transform posisi
+        play = transform.position; //start sebagai object transform posisi
         lompat = GetComponent<Rigidbody2D>();
         anim = GetComponent<Animator>();
         // info_Coin = GameObject.Find("UI_Coin").GetComponent<Text>();
@@ -46,19 +52,24 @@ public class Gerak : MonoBehaviour
     public bool ButtonRight;
     public bool ButtonJump;
 
-    public void buttonDownLeft(){
+    public void buttonDownLeft()
+    {
         ButtonLeft = true;
     }
-    public void buttonUpLeft(){
+    public void buttonUpLeft()
+    {
         ButtonLeft = false;
     }
-    public void buttonDownRight(){
+    public void buttonDownRight()
+    {
         ButtonRight = true;
     }
-    public void buttonUpRight(){
+    public void buttonUpRight()
+    {
         ButtonRight = false;
     }
-    public void buttonJump(){
+    public void buttonJump()
+    {
         do
         {
             ButtonJump = true;
@@ -70,17 +81,18 @@ public class Gerak : MonoBehaviour
     {
         MethodObjectives();
         go = objectivePlayers.transform.childCount;
-        if(go == 0){
+        if (go == 0)
+        {
             objectiveText.text = "Good Joob!. Now Find A Door To Get Next Level";
         }
 
-        if(play_again == true)
+        if (play_again == true)
         {
             transform.position = play;
-            play_again=false;
+            play_again = false;
         }
 
-        if(tanah == false)
+        if (tanah == false)
         {
             anim.SetBool("Jump", true);
         }
@@ -93,7 +105,7 @@ public class Gerak : MonoBehaviour
         info_heart.text = "Nyawa : " + heart.ToString(); //Heart yaitu Variabel di Atribut Player
         // info_Coin.text = "Promogem : " + coin.ToString();
 
-        if (Input.GetKey (KeyCode.D) || (ButtonRight == true))
+        if (Input.GetKey(KeyCode.D) || (ButtonRight == true))
         {
             transform.Translate(Vector2.right * kecepatan * Time.deltaTime);
             pindah = -1;
@@ -106,7 +118,7 @@ public class Gerak : MonoBehaviour
                 anim.SetBool("Run", false);
             }
         }
-        else if (Input.GetKey (KeyCode.A) || (ButtonLeft == true))
+        else if (Input.GetKey(KeyCode.A) || (ButtonLeft == true))
         {
             transform.Translate(Vector2.left * kecepatan * Time.deltaTime);
             pindah = 1;
@@ -117,14 +129,14 @@ public class Gerak : MonoBehaviour
             else
             {
                 anim.SetBool("Run", false);
-            }    
+            }
         }
         else
         {
             anim.SetBool("Run", false);
         }
 
-        if (tanah==true && Input.GetKeyDown(KeyCode.Space) || (ButtonJump == true))
+        if (tanah == true && Input.GetKeyDown(KeyCode.Space) || (ButtonJump == true))
         {
             float x = lompat.velocity.x;
             lompat.velocity = new Vector2(x, kekuatanlompat);
@@ -146,8 +158,8 @@ public class Gerak : MonoBehaviour
         }
     }
 
-    
-    
+
+
 
     void flip()
     {
@@ -157,57 +169,70 @@ public class Gerak : MonoBehaviour
         transform.localScale = Player;
     }
 
-    private void OnTriggerStay2D(Collider2D other) {
+    private void OnTriggerStay2D(Collider2D other)
+    {
 
-        if(other.gameObject.tag == "Monster"){
+        if (other.gameObject.tag == "Monster")
+        {
             Debug.Log("Monster Trigger");
-            if(Input.GetKeyDown(KeyCode.F)){
-                StartCoroutine(loadMiniGames("AnimalWord1"));
+            if (Input.GetKeyDown(KeyCode.F))
+            {
+                StartCoroutine(loadMiniGames(Level1));
                 Destroy(other.gameObject);
                 objectivePoints++;
             }
         }
-        if(other.gameObject.tag == "Monster2"){
+        if (other.gameObject.tag == "Monster2")
+        {
             Debug.Log("Monster Trigger1");
-            StopCoroutine(loadMiniGames("AnimalWord1"));
-            if(Input.GetKeyDown(KeyCode.F)){
-                StartCoroutine(loadMiniGames("AnimalWord2"));
+            StopCoroutine(loadMiniGames(Level1));
+            if (Input.GetKeyDown(KeyCode.F))
+            {
+                StartCoroutine(loadMiniGames(Level2));
                 Destroy(other.gameObject);
                 objectivePoints++;
             }
         }
-        if(other.gameObject.tag == "Monster3"){
+        if (other.gameObject.tag == "Monster3")
+        {
             Debug.Log("Monster Trigger2");
-            StopCoroutine(loadMiniGames("AnimalWord2"));
-            if(Input.GetKeyDown(KeyCode.F)){
-                StartCoroutine(loadMiniGames("AnimalWord3"));
+            StopCoroutine(loadMiniGames(Level2));
+            if (Input.GetKeyDown(KeyCode.F))
+            {
+                StartCoroutine(loadMiniGames(Level3));
                 Destroy(other.gameObject);
                 objectivePoints++;
             }
         }
-        if(other.gameObject.tag == "Monster4"){
+        if (other.gameObject.tag == "Monster4")
+        {
             Debug.Log("Monster Trigger3");
-            StopCoroutine(loadMiniGames("AnimalWord3"));
-            if(Input.GetKeyDown(KeyCode.F)){
-                StartCoroutine(loadMiniGames("AnimalWord4"));
+            StopCoroutine(loadMiniGames(Level3));
+            if (Input.GetKeyDown(KeyCode.F))
+            {
+                StartCoroutine(loadMiniGames(Level4));
                 Destroy(other.gameObject);
                 objectivePoints++;
             }
         }
-        if(other.gameObject.tag == "Monster5"){
+        if (other.gameObject.tag == "Monster5")
+        {
             Debug.Log("Monster Trigger4");
-            StopCoroutine(loadMiniGames("AnimalWord4"));
-            if(Input.GetKeyDown(KeyCode.F)){
-                StartCoroutine(loadMiniGames("AnimalWord5"));
+            StopCoroutine(loadMiniGames(Level4));
+            if (Input.GetKeyDown(KeyCode.F))
+            {
+                StartCoroutine(loadMiniGames(Level5));
                 Destroy(other.gameObject);
                 objectivePoints++;
             }
         }
-        
+
     }
 
-    private void OnTriggerEnter2D(Collider2D other) {
-        if(other.gameObject.tag == "Checkpoint"){
+    private void OnTriggerEnter2D(Collider2D other)
+    {
+        if (other.gameObject.tag == "Checkpoint")
+        {
             play = other.transform.position;
             Debug.Log("Checkpoint");
             StopAllCoroutines();
@@ -217,10 +242,11 @@ public class Gerak : MonoBehaviour
     IEnumerator loadMiniGames(string Name)
     {
         SceneManager.LoadScene(Name, LoadSceneMode.Additive);
-        yield return new WaitUntil(() => SceneManager.GetSceneByName(Name).isLoaded);   
+        yield return new WaitUntil(() => SceneManager.GetSceneByName(Name).isLoaded);
     }
 
-    private void MethodObjectives(){
+    private void MethodObjectives()
+    {
         objectiveText.text = "Find All The Objectives " + objectivePoints + "/" + totalPoints;
     }
 }

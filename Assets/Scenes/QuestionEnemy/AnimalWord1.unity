@@ -597,7 +597,7 @@ MonoBehaviour:
   player: {fileID: 77425622}
   enemy: {fileID: 838670834}
   timerImage: {fileID: 1866070210}
-  maxTime: 20
+  maxTime: 180
   Scene: AnimalWord1
 --- !u!4 &298558199
 Transform:
@@ -5268,7 +5268,7 @@ MonoBehaviour:
   m_PreserveAspect: 0
   m_FillCenter: 1
   m_FillMethod: 0
-  m_FillAmount: 0.702
+  m_FillAmount: 1
   m_FillClockwise: 1
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
