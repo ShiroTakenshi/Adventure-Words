@@ -1,11 +1,6 @@
 using System.Collections;
-using System.Collections.Generic;
-using System.Runtime.CompilerServices;
-using JetBrains.Annotations;
-using Mono.CompilerServices.SymbolWriter;
-using Unity.VisualScripting;
 using UnityEngine;
-using UnityEngine.Analytics;
+
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
@@ -28,6 +23,9 @@ public class Gerak : MonoBehaviour
     [SerializeField] private Text info_heart; // Variabel Heart
     Text info_Coin; // Variabel untuk Koin
     private string[] scene;
+    [SerializeField] private GameObject objectivePlayers;
+    [SerializeField] private Text objectiveText;
+    private int go, totalPoints, objectivePoints;
     
     Animator anim; 
     private void Awake() {
@@ -41,6 +39,7 @@ public class Gerak : MonoBehaviour
         lompat = GetComponent<Rigidbody2D>();
         anim = GetComponent<Animator>();
         // info_Coin = GameObject.Find("UI_Coin").GetComponent<Text>();
+        totalPoints = objectivePlayers.transform.childCount;
     }
 
     public bool ButtonLeft;
@@ -69,6 +68,11 @@ public class Gerak : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        MethodObjectives();
+        go = objectivePlayers.transform.childCount;
+        if(go == 0){
+            objectiveText.text = "Good Joob!. Now Find A Door To Get Next Level";
+        }
 
         if(play_again == true)
         {
@@ -160,6 +164,7 @@ public class Gerak : MonoBehaviour
             if(Input.GetKeyDown(KeyCode.F)){
                 StartCoroutine(loadMiniGames("AnimalWord1"));
                 Destroy(other.gameObject);
+                objectivePoints++;
             }
         }
         if(other.gameObject.tag == "Monster2"){
@@ -168,6 +173,7 @@ public class Gerak : MonoBehaviour
             if(Input.GetKeyDown(KeyCode.F)){
                 StartCoroutine(loadMiniGames("AnimalWord2"));
                 Destroy(other.gameObject);
+                objectivePoints++;
             }
         }
         if(other.gameObject.tag == "Monster3"){
@@ -176,6 +182,7 @@ public class Gerak : MonoBehaviour
             if(Input.GetKeyDown(KeyCode.F)){
                 StartCoroutine(loadMiniGames("AnimalWord3"));
                 Destroy(other.gameObject);
+                objectivePoints++;
             }
         }
         if(other.gameObject.tag == "Monster4"){
@@ -184,6 +191,7 @@ public class Gerak : MonoBehaviour
             if(Input.GetKeyDown(KeyCode.F)){
                 StartCoroutine(loadMiniGames("AnimalWord4"));
                 Destroy(other.gameObject);
+                objectivePoints++;
             }
         }
         if(other.gameObject.tag == "Monster5"){
@@ -192,6 +200,7 @@ public class Gerak : MonoBehaviour
             if(Input.GetKeyDown(KeyCode.F)){
                 StartCoroutine(loadMiniGames("AnimalWord5"));
                 Destroy(other.gameObject);
+                objectivePoints++;
             }
         }
         
@@ -201,6 +210,7 @@ public class Gerak : MonoBehaviour
         if(other.gameObject.tag == "Checkpoint"){
             play = other.transform.position;
             Debug.Log("Checkpoint");
+            StopAllCoroutines();
         }
     }
 
@@ -208,5 +218,9 @@ public class Gerak : MonoBehaviour
     {
         SceneManager.LoadScene(Name, LoadSceneMode.Additive);
         yield return new WaitUntil(() => SceneManager.GetSceneByName(Name).isLoaded);   
+    }
+
+    private void MethodObjectives(){
+        objectiveText.text = "Find All The Objectives " + objectivePoints + "/" + totalPoints;
     }
 }
