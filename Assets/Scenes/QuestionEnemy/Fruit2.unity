@@ -568,7 +568,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 20d511efc702a4e43a968b5bf7328527, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  questionDataScriptable: {fileID: 11400000, guid: a73b1535304d1f3458d0bbefb1ab5e50, type: 2}
+  questionDataScriptable: {fileID: 11400000, guid: e24da0e1839b6ab41ab8d0d10344f1ae, type: 2}
   questionText: {fileID: 1330825346}
   QuesImage: {fileID: 554002695}
   AnswerPrefabs:
@@ -598,7 +598,7 @@ MonoBehaviour:
   enemy: {fileID: 838670834}
   timerImage: {fileID: 1866070210}
   maxTime: 180
-  Scene: Fruit
+  Scene: Fruit2
 --- !u!4 &298558199
 Transform:
   m_ObjectHideFlags: 0

@@ -13,13 +13,18 @@ MonoBehaviour:
   m_Name: Vegetables 1
   m_EditorClassIdentifier: 
   questions:
-  - indonesiaKata: Cabai
+  - imageQues: {fileID: 0}
+    indonesiaKata: Cabai
     answerInggris: Chili
-  - indonesiaKata: Buncis
+  - imageQues: {fileID: 0}
+    indonesiaKata: Buncis
     answerInggris: Bean
-  - indonesiaKata: Jagung
+  - imageQues: {fileID: 0}
+    indonesiaKata: Jagung
     answerInggris: Corn
-  - indonesiaKata: Wortel
+  - imageQues: {fileID: 0}
+    indonesiaKata: Wortel
     answerInggris: Carrot
-  - indonesiaKata: Potato
-    answerInggris: Kentang
+  - imageQues: {fileID: 0}
+    indonesiaKata: Kentang
+    answerInggris: Potato

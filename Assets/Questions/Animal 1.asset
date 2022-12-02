@@ -16,7 +16,7 @@ MonoBehaviour:
   - imageQues: {fileID: 21300000, guid: b51a04b2ed91a5c458dddf38ee041647, type: 3}
     indonesiaKata: Babi
     answerInggris: Pig
-  - imageQues: {fileID: 21300000, guid: fce22ba458fb8de4c875c49acfe3ebfa, type: 3}
+  - imageQues: {fileID: 0}
     indonesiaKata: Kucing
     answerInggris: Cat
   - imageQues: {fileID: 21300000, guid: 58681b1c76bb0014ba7d11743644f03f, type: 3}

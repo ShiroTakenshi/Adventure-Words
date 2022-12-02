@@ -21,7 +21,7 @@ MonoBehaviour:
     answerInggris: Chicken
   - imageQues: {fileID: 0}
     indonesiaKata: Katak
-    answerInggris: Grog
+    answerInggris: Frog
   - imageQues: {fileID: 0}
     indonesiaKata: Zebra
     answerInggris: Zebra
