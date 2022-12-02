@@ -32,6 +32,11 @@ public class Gerak : MonoBehaviour
     [SerializeField] private string Level4;
     [SerializeField] private string Level5;
 
+    [SerializeField] AudioSource jumpAudio;
+    [SerializeField] AudioSource dieAudio;
+    [SerializeField] AudioSource checkpointAudio;
+
+
     Animator anim;
     private void Awake()
     {
@@ -88,6 +93,7 @@ public class Gerak : MonoBehaviour
 
         if (play_again == true)
         {
+            dieAudio.Play();
             transform.position = play;
             play_again = false;
         }
@@ -102,7 +108,7 @@ public class Gerak : MonoBehaviour
         }
 
         tanah = Physics2D.OverlapCircle(deteksitanah.position, jangkauan, targetlayer);
-        info_heart.text = "Nyawa : " + heart.ToString(); //Heart yaitu Variabel di Atribut Player
+        info_heart.text = "Life : " + heart.ToString(); //Heart yaitu Variabel di Atribut Player
         // info_Coin.text = "Promogem : " + coin.ToString();
 
         if (Input.GetKey(KeyCode.D) || (ButtonRight == true))
@@ -138,6 +144,7 @@ public class Gerak : MonoBehaviour
 
         if (tanah == true && Input.GetKeyDown(KeyCode.Space) || (ButtonJump == true))
         {
+            jumpAudio.Play();
             float x = lompat.velocity.x;
             lompat.velocity = new Vector2(x, kekuatanlompat);
             //lompat.AddForce(new Vector2(0, kekuatanlompat));
@@ -157,10 +164,6 @@ public class Gerak : MonoBehaviour
             Debug.Log("Player Wafat");
         }
     }
-
-
-
-
     void flip()
     {
         balik = !balik;
@@ -233,6 +236,7 @@ public class Gerak : MonoBehaviour
     {
         if (other.gameObject.tag == "Checkpoint")
         {
+            checkpointAudio.Play();
             play = other.transform.position;
             Debug.Log("Checkpoint");
             StopAllCoroutines();
