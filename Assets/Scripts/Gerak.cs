@@ -38,6 +38,7 @@ public class Gerak : MonoBehaviour
     [SerializeField] AudioSource finishAudio;
 
     [SerializeField] GameObject finishObject;
+    [SerializeField] GameObject PanelScreen;
 
 
     Animator anim;
@@ -251,6 +252,11 @@ public class Gerak : MonoBehaviour
             if (other.gameObject.CompareTag("Finish"))
             {
                 finishAudio.Play();
+                PanelScreen.SetActive(true);
+                SoundManager.Instance.musicSource.mute = true;
+                jumpAudio.Stop();
+                dieAudio.Stop();
+                checkpointAudio.Stop();
             }
         }
     }

@@ -221,19 +221,27 @@ public class GameManager : MonoBehaviour
         currentAnswerIndex = 0;
     }
 
+    // IEnumerator nextPlay(){
+    //     yield return new WaitForSeconds(2f);
+    //     QuesImage.enabled = false;
+    // }
+
     public void hintAnswer()
     {
         // event hint answer pada button
         if (AnswerPrefabs[currentAnswerIndex].CharValue.Equals('_'))
         {
             AnswerPrefabs[currentAnswerIndex].SetChar(char.ToUpper(answerWords[currentAnswerIndex]));
-            if (currentAnswerIndex == answerWords.Length - 1)
+            if (currentAnswerIndex == 0)
             {
                 QuesImage.enabled = true;
                 QuesImage.sprite = questionDataScriptable.questions[currentQuestionIndex].imageQues;
             }
             currentAnswerIndex++;
+            
         }
+
+        
 
         // cek health player jika health player kurang dari 0 maka game over
         player.health = player.health - enemy.attackDamage;
@@ -275,6 +283,9 @@ public class GameManager : MonoBehaviour
                 Debug.Log("Jawaban Benar");
                 gameState = GameState.Next;
                 currentQuestionIndex++;
+                if(gameState == GameState.Next){
+                    QuesImage.enabled = false;
+                }
 
                 if (currentQuestionIndex < questionDataScriptable.questions.Count)
                 {
