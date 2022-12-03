@@ -13,18 +13,18 @@ MonoBehaviour:
   m_Name: Vegetables 2
   m_EditorClassIdentifier: 
   questions:
-  - imageQues: {fileID: 21300000, guid: 379608d4c7720874fa3721179150bfa8, type: 3}
+  - imageQues: {fileID: 21300000, guid: 2af60a9507751324f825d89040708b41, type: 3}
     indonesiaKata: Jahe
     answerInggris: Ginger
-  - imageQues: {fileID: 0}
+  - imageQues: {fileID: 21300000, guid: a73874a9b94e04a448ab3b9c981bdbfe, type: 3}
     indonesiaKata: Lada
     answerInggris: Pepper
-  - imageQues: {fileID: 0}
+  - imageQues: {fileID: 21300000, guid: d6b78eef8c69f8449aebc2e66fb4d314, type: 3}
     indonesiaKata: Kedelai
     answerInggris: Soybean
-  - imageQues: {fileID: 0}
+  - imageQues: {fileID: 21300000, guid: 5cfe58030fd89ae459e34442dcb11709, type: 3}
     indonesiaKata: Bayam
     answerInggris: Spinach
-  - imageQues: {fileID: 0}
+  - imageQues: {fileID: 21300000, guid: 14160cb5f75a562419438ae31e27b043, type: 3}
     indonesiaKata: Tomat
     answerInggris: Tomato

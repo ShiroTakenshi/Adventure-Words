@@ -13,18 +13,18 @@ MonoBehaviour:
   m_Name: Animal 1
   m_EditorClassIdentifier: 
   questions:
-  - imageQues: {fileID: 21300000, guid: b51a04b2ed91a5c458dddf38ee041647, type: 3}
+  - imageQues: {fileID: 21300000, guid: ed47eff51e68ec04eba78473df701b40, type: 3}
     indonesiaKata: Babi
     answerInggris: Pig
-  - imageQues: {fileID: 0}
+  - imageQues: {fileID: 21300000, guid: e8c972802c809694caf92f92f2ebf145, type: 3}
     indonesiaKata: Kucing
     answerInggris: Cat
-  - imageQues: {fileID: 21300000, guid: 58681b1c76bb0014ba7d11743644f03f, type: 3}
+  - imageQues: {fileID: 21300000, guid: e76979679d907f849977d13c247f8e09, type: 3}
     indonesiaKata: Anjing
     answerInggris: Dog
-  - imageQues: {fileID: 21300000, guid: c94c36467adf5e04680e91a4e25da7a0, type: 3}
+  - imageQues: {fileID: 21300000, guid: c08349d1d0918ce48823e4ded07952a2, type: 3}
     indonesiaKata: Sapi
     answerInggris: Cow
-  - imageQues: {fileID: 21300000, guid: de25ee8120a41a54594f58d3259b2ca3, type: 3}
+  - imageQues: {fileID: 21300000, guid: e79a84fa1e9443342a3ee5685c1454ed, type: 3}
     indonesiaKata: Ikan
     answerInggris: Fish
