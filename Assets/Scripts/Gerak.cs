@@ -35,6 +35,9 @@ public class Gerak : MonoBehaviour
     [SerializeField] AudioSource jumpAudio;
     [SerializeField] AudioSource dieAudio;
     [SerializeField] AudioSource checkpointAudio;
+    [SerializeField] AudioSource finishAudio;
+
+    [SerializeField] GameObject finishObject;
 
 
     Animator anim;
@@ -88,7 +91,8 @@ public class Gerak : MonoBehaviour
         go = objectivePlayers.transform.childCount;
         if (go == 0)
         {
-            objectiveText.text = "Good Joob!. Now Find A Door To Get Next Level";
+            finishObject.SetActive(true);
+            objectiveText.text = "Objective Complete!";
         }
 
         if (play_again == true)
@@ -241,6 +245,14 @@ public class Gerak : MonoBehaviour
             Debug.Log("Checkpoint");
             StopAllCoroutines();
         }
+        else
+        {
+            // funsi finish
+            if (other.gameObject.CompareTag("Finish"))
+            {
+                finishAudio.Play();
+            }
+        }
     }
 
     IEnumerator loadMiniGames(string Name)
@@ -253,4 +265,5 @@ public class Gerak : MonoBehaviour
     {
         objectiveText.text = "Find All The Objectives " + objectivePoints + "/" + totalPoints;
     }
+
 }
