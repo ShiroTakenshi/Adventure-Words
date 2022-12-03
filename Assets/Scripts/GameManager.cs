@@ -166,6 +166,10 @@ public class GameManager : MonoBehaviour
                 enemy.TakeDamage();
                 gameState = GameState.Next;
                 timeLeft += 2;
+                if (gameState == GameState.Next)
+                {
+                    QuesImage.enabled = false;
+                }
                 currentQuestionIndex++;
 
                 if (currentQuestionIndex < questionDataScriptable.questions.Count)
@@ -238,10 +242,10 @@ public class GameManager : MonoBehaviour
                 QuesImage.sprite = questionDataScriptable.questions[currentQuestionIndex].imageQues;
             }
             currentAnswerIndex++;
-            
+
         }
 
-        
+
 
         // cek health player jika health player kurang dari 0 maka game over
         player.health = player.health - enemy.attackDamage;
@@ -257,12 +261,12 @@ public class GameManager : MonoBehaviour
             //             StartCoroutine(attackTimeOutScenes());
             //         timerImage.SetActive(false);
             //     }
-                gameOverLose.SetActive(true);
-                    player.health = 0;
-                    enemy.AnimateAttack();
-                    if (!couritine)
-                        StartCoroutine(attackTimeOutScenes());
-                    timerImage.SetActive(false);
+            gameOverLose.SetActive(true);
+            player.health = 0;
+            enemy.AnimateAttack();
+            if (!couritine)
+                StartCoroutine(attackTimeOutScenes());
+            timerImage.SetActive(false);
             gameOverLose.SetActive(true);
         }
 
@@ -283,7 +287,8 @@ public class GameManager : MonoBehaviour
                 Debug.Log("Jawaban Benar");
                 gameState = GameState.Next;
                 currentQuestionIndex++;
-                if(gameState == GameState.Next){
+                if (gameState == GameState.Next)
+                {
                     QuesImage.enabled = false;
                 }
 
