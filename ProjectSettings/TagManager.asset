@@ -6,6 +6,14 @@ TagManager:
   tags:
   - Floor
   - Obstacle
+  - Enemy
+  - Monster3
+  - Monster4
+  - Checkpoint
+  - Monster5
+  - Monster2
+  - Monster
+  - Question
   layers:
   - Default
   - TransparentFX
@@ -14,7 +22,7 @@ TagManager:
   - Water
   - UI
   - Floor
-  - 
+  - Charcter
   - 
   - 
   - 
@@ -40,6 +48,12 @@ TagManager:
   - 
   - 
   m_SortingLayers:
+  - name: Backgrund
+    uniqueID: 2793446179
+    locked: 0
   - name: Default
     uniqueID: 0
+    locked: 0
+  - name: blade
+    uniqueID: 1188180309
     locked: 0

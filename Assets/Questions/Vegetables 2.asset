@@ -13,13 +13,18 @@ MonoBehaviour:
   m_Name: Vegetables 2
   m_EditorClassIdentifier: 
   questions:
-  - indonesiaKata: Brokoli
-    answerInggris: Broccoli
-  - indonesiaKata: Lada
+  - imageQues: {fileID: 21300000, guid: 2af60a9507751324f825d89040708b41, type: 3}
+    indonesiaKata: Jahe
+    answerInggris: Ginger
+  - imageQues: {fileID: 21300000, guid: a73874a9b94e04a448ab3b9c981bdbfe, type: 3}
+    indonesiaKata: Lada
     answerInggris: Pepper
-  - indonesiaKata: Kedelai
+  - imageQues: {fileID: 21300000, guid: d6b78eef8c69f8449aebc2e66fb4d314, type: 3}
+    indonesiaKata: Kedelai
     answerInggris: Soybean
-  - indonesiaKata: Bayam
+  - imageQues: {fileID: 21300000, guid: 5cfe58030fd89ae459e34442dcb11709, type: 3}
+    indonesiaKata: Bayam
     answerInggris: Spinach
-  - indonesiaKata: Tomat
+  - imageQues: {fileID: 21300000, guid: 14160cb5f75a562419438ae31e27b043, type: 3}
+    indonesiaKata: Tomat
     answerInggris: Tomato

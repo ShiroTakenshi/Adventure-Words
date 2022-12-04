@@ -13,18 +13,18 @@ MonoBehaviour:
   m_Name: Animal 2
   m_EditorClassIdentifier: 
   questions:
-  - imageQues: {fileID: 0}
+  - imageQues: {fileID: 21300000, guid: 2372ce499b89caa42a3c308dd8d303d6, type: 3}
     indonesiaKata: Kambing
     answerInggris: Goat
-  - imageQues: {fileID: 0}
+  - imageQues: {fileID: 21300000, guid: 5910c6d0771db914baf80538232a6aab, type: 3}
     indonesiaKata: Ayam
     answerInggris: Chicken
-  - imageQues: {fileID: 0}
+  - imageQues: {fileID: 21300000, guid: d4011757a3bfe344d94459e702654df1, type: 3}
     indonesiaKata: Katak
-    answerInggris: Grog
-  - imageQues: {fileID: 0}
+    answerInggris: Frog
+  - imageQues: {fileID: 21300000, guid: 7644240fc9cf4574da74482c25ac8435, type: 3}
     indonesiaKata: Zebra
     answerInggris: Zebra
-  - imageQues: {fileID: 0}
+  - imageQues: {fileID: 21300000, guid: 966dde8c4ac4c994bbfef2e3e6d26d7d, type: 3}
     indonesiaKata: Monyet
     answerInggris: Monkey
