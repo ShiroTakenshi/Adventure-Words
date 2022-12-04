@@ -252,7 +252,6 @@ public class Gerak : MonoBehaviour
             if (other.gameObject.CompareTag("Finish"))
             {
                 finishAudio.Play();
-                lompat.bodyType = RigidbodyType2D.Static;
                 PanelScreen.SetActive(true);
                 SoundManager.Instance.musicSource.mute = true;
                 jumpAudio.Stop();

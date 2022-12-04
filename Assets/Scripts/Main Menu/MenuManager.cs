@@ -11,9 +11,10 @@ public class MenuManager : MonoBehaviour
     public Slider musicSlider;
 
     // TODO berganti scene
-    public void PlayScene(){
-        SceneManager.LoadScene("Platformer 2");
-    }
+    
+    // public void PlayScene(){
+    //     SceneManager.LoadScene("Platformer 2");
+    // }
 
     private void Awake()
     {

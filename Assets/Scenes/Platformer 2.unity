@@ -723,7 +723,7 @@ GameObject:
   - component: {fileID: 103975646}
   - component: {fileID: 103975648}
   - component: {fileID: 103975647}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: jeruk
   m_TagString: Question
   m_Icon: {fileID: 0}
@@ -956,7 +956,7 @@ GameObject:
   - component: {fileID: 158538308}
   - component: {fileID: 158538310}
   - component: {fileID: 158538309}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Ular
   m_TagString: Question
   m_Icon: {fileID: 0}
@@ -2916,7 +2916,7 @@ GameObject:
   - component: {fileID: 240665367}
   - component: {fileID: 240665366}
   - component: {fileID: 240665369}
-  m_Layer: 9
+  m_Layer: 7
   m_Name: Monster Ceritanya (2)
   m_TagString: Monster3
   m_Icon: {fileID: 0}
@@ -3315,7 +3315,7 @@ GameObject:
   - component: {fileID: 270088969}
   - component: {fileID: 270088971}
   - component: {fileID: 270088970}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Mangga
   m_TagString: Question
   m_Icon: {fileID: 0}
@@ -3451,7 +3451,7 @@ GameObject:
   - component: {fileID: 297483470}
   - component: {fileID: 297483472}
   - component: {fileID: 297483471}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Start
   m_TagString: Question
   m_Icon: {fileID: 0}
@@ -3739,7 +3739,7 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0.16210575, y: -0.044507742}
+  m_Offset: {x: 0.19889352, y: -0.044507742}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -3750,7 +3750,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 0.5440952, y: 1.9476283}
+  m_Size: {x: 0.47051972, y: 1.9476283}
   m_EdgeRadius: 0
 --- !u!50 &374191068
 Rigidbody2D:
@@ -3853,7 +3853,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 374191065}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -7, y: 0, z: 0}
+  m_LocalPosition: {x: -7, y: -1.95, z: 0}
   m_LocalScale: {x: 0.7, y: 0.7, z: 0.7}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -4566,7 +4566,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 467415780}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Mangga
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4598,7 +4598,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 468766876}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Singa
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4780,7 +4780,7 @@ Camera:
   far clip plane: 1000
   field of view: 60
   orthographic: 1
-  orthographic size: 4.93
+  orthographic size: 4.6
   m_Depth: -1
   m_CullingMask:
     serializedVersion: 2
@@ -4854,7 +4854,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 521168493}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 10.24, y: 0.73, z: 0}
+  m_LocalPosition: {x: 10.13, y: 0.73, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -5042,7 +5042,7 @@ GameObject:
   - component: {fileID: 607427314}
   - component: {fileID: 607427313}
   - component: {fileID: 607427312}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Anggur
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5296,7 +5296,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 679185468}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -991.76, y: -490.21, z: -4.377055}
+  m_LocalPosition: {x: -991.53, y: -490.21, z: -4.377055}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -8239,7 +8239,7 @@ GameObject:
   - component: {fileID: 707484052}
   - component: {fileID: 707484054}
   - component: {fileID: 707484053}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Anggur
   m_TagString: Question
   m_Icon: {fileID: 0}
@@ -8345,7 +8345,7 @@ GameObject:
   - component: {fileID: 744984651}
   - component: {fileID: 744984653}
   - component: {fileID: 744984654}
-  m_Layer: 9
+  m_Layer: 7
   m_Name: Checkpoint
   m_TagString: Checkpoint
   m_Icon: {fileID: 0}
@@ -8508,7 +8508,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 767821427}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Ular
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -9168,7 +9168,7 @@ GameObject:
   - component: {fileID: 888044499}
   - component: {fileID: 888044501}
   - component: {fileID: 888044500}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Singa
   m_TagString: Question
   m_Icon: {fileID: 0}
@@ -9567,7 +9567,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 993286385}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 28.16, y: 1.13, z: 0.02435191}
+  m_LocalPosition: {x: 28.44, y: 1.13, z: 0.02435191}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -9655,7 +9655,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1035338648}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: jeruk
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -9687,7 +9687,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1049260166}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Start
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -9721,7 +9721,7 @@ GameObject:
   - component: {fileID: 1059479222}
   - component: {fileID: 1059479221}
   - component: {fileID: 1059479223}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Apel
   m_TagString: Question
   m_Icon: {fileID: 0}
@@ -10741,7 +10741,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1321319816}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -967.66, y: -490.06, z: -4.377055}
+  m_LocalPosition: {x: -967.66, y: -490.02, z: -4.377055}
   m_LocalScale: {x: 0.3427707, y: 0.3427707, z: 0.3427707}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -11100,7 +11100,7 @@ GameObject:
   - component: {fileID: 1448790903}
   - component: {fileID: 1448790902}
   - component: {fileID: 1448790905}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Start
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -11274,7 +11274,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1467321997}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Apel
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -12081,7 +12081,7 @@ GameObject:
   - component: {fileID: 1613965234}
   - component: {fileID: 1613965233}
   - component: {fileID: 1613965232}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Mango
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -12181,9 +12181,9 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 1188180309
-  m_SortingLayer: 1
-  m_SortingOrder: -1
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 1
   m_Sprite: {fileID: 21300000, guid: e847785518381e04d862455499d10b4b, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -12207,7 +12207,7 @@ GameObject:
   - component: {fileID: 1631490377}
   - component: {fileID: 1631490376}
   - component: {fileID: 1631490375}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Singa
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -12330,7 +12330,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1650171716}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Objectives
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -12673,7 +12673,7 @@ GameObject:
   - component: {fileID: 1708637464}
   - component: {fileID: 1708637463}
   - component: {fileID: 1708637462}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Apple (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -16119,8 +16119,8 @@ Tilemap:
   - first: {x: 49, y: -2, z: 0}
     second:
       serializedVersion: 2
-      m_TileIndex: 25
-      m_TileSpriteIndex: 15
+      m_TileIndex: 24
+      m_TileSpriteIndex: 14
       m_TileMatrixIndex: 0
       m_TileColorIndex: 0
       m_TileObjectToInstantiateIndex: 65535
@@ -16129,8 +16129,8 @@ Tilemap:
   - first: {x: 50, y: -2, z: 0}
     second:
       serializedVersion: 2
-      m_TileIndex: 21
-      m_TileSpriteIndex: 12
+      m_TileIndex: 24
+      m_TileSpriteIndex: 14
       m_TileMatrixIndex: 0
       m_TileColorIndex: 0
       m_TileObjectToInstantiateIndex: 65535
@@ -16660,15 +16660,15 @@ Tilemap:
     m_Data: {fileID: 0}
   - m_RefCount: 1
     m_Data: {fileID: 11400000, guid: 17507c2c9b6f4c7428da1ccc22af16d0, type: 2}
-  - m_RefCount: 11
+  - m_RefCount: 10
     m_Data: {fileID: 11400000, guid: 6aa38bef6810ace4e88aef34bdab98e4, type: 2}
   - m_RefCount: 1
     m_Data: {fileID: 11400000, guid: 8d27f53fe3b35174594d7f92cb06965c, type: 2}
   - m_RefCount: 3
     m_Data: {fileID: 11400000, guid: c5aca5fdbe7cfc846a64d31c5cfc72e6, type: 2}
-  - m_RefCount: 15
+  - m_RefCount: 17
     m_Data: {fileID: 11400000, guid: 31a94a20e200ecf43a0020bce6f55662, type: 2}
-  - m_RefCount: 53
+  - m_RefCount: 52
     m_Data: {fileID: 11400000, guid: 830a940bf48f3974494bc0a1ed812058, type: 2}
   - m_RefCount: 12
     m_Data: {fileID: 11400000, guid: b6f4637802bc81646aabaaa7a63f3ba7, type: 2}
@@ -16697,13 +16697,13 @@ Tilemap:
     m_Data: {fileID: 0}
   - m_RefCount: 12
     m_Data: {fileID: 21300000, guid: 41cae322ae60422418356a7a6d167d8c, type: 3}
-  - m_RefCount: 11
+  - m_RefCount: 10
     m_Data: {fileID: 21300000, guid: fd902a97063329c478fa6c3653648665, type: 3}
   - m_RefCount: 1
     m_Data: {fileID: 21300000, guid: 2f1dace0575a6f84491f666c375d9d02, type: 3}
-  - m_RefCount: 15
+  - m_RefCount: 17
     m_Data: {fileID: 21300000, guid: 52d95de1776f6394ca85a92fd8decc55, type: 3}
-  - m_RefCount: 53
+  - m_RefCount: 52
     m_Data: {fileID: 21300000, guid: ed052f951856c774aac8c24e8c513863, type: 3}
   - m_RefCount: 1
     m_Data: {fileID: 21300000, guid: 968a0e73908cc88418f7d1228f1d2393, type: 3}
@@ -16849,7 +16849,7 @@ GameObject:
   - component: {fileID: 1887599165}
   - component: {fileID: 1887599164}
   - component: {fileID: 1887599163}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Ular
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -16972,7 +16972,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1926014897}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Anggur
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -17440,7 +17440,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1997130331}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: CheckPoint
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -17542,7 +17542,7 @@ GameObject:
   - component: {fileID: 2031375545}
   - component: {fileID: 2031375544}
   - component: {fileID: 2031375543}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: jeruk
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -17656,6 +17656,67 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!1001 &2110263427
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 1920164129663612828, guid: c127ffe1cf4371d47816d7986937a479, type: 3}
+      propertyPath: m_RootOrder
+      value: 15
+      objectReference: {fileID: 0}
+    - target: {fileID: 1920164129663612828, guid: c127ffe1cf4371d47816d7986937a479, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 2216.6782
+      objectReference: {fileID: 0}
+    - target: {fileID: 1920164129663612828, guid: c127ffe1cf4371d47816d7986937a479, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 306.0335
+      objectReference: {fileID: 0}
+    - target: {fileID: 1920164129663612828, guid: c127ffe1cf4371d47816d7986937a479, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 11.455242
+      objectReference: {fileID: 0}
+    - target: {fileID: 1920164129663612828, guid: c127ffe1cf4371d47816d7986937a479, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1920164129663612828, guid: c127ffe1cf4371d47816d7986937a479, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1920164129663612828, guid: c127ffe1cf4371d47816d7986937a479, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1920164129663612828, guid: c127ffe1cf4371d47816d7986937a479, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1920164129663612828, guid: c127ffe1cf4371d47816d7986937a479, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1920164129663612828, guid: c127ffe1cf4371d47816d7986937a479, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1920164129663612828, guid: c127ffe1cf4371d47816d7986937a479, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1920164129663612831, guid: c127ffe1cf4371d47816d7986937a479, type: 3}
+      propertyPath: m_Name
+      value: SceneLoader
+      objectReference: {fileID: 0}
+    - target: {fileID: 6499364547914204558, guid: c127ffe1cf4371d47816d7986937a479, type: 3}
+      propertyPath: transitionTime
+      value: 10
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: c127ffe1cf4371d47816d7986937a479, type: 3}
 --- !u!1 &2112186518
 GameObject:
   m_ObjectHideFlags: 0
